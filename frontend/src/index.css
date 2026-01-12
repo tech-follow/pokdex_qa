@@ -1,0 +1,79 @@
+:root {
+  /* Palette inspirée du thème Pokémon moderne */
+  --bg-primary: #0f0f1a;
+  --bg-secondary: #1a1a2e;
+  --bg-card: #16213e;
+  --bg-hover: #1f3460;
+  
+  --accent-red: #e63946;
+  --accent-blue: #4cc9f0;
+  --accent-yellow: #ffd60a;
+  --accent-green: #06d6a0;
+  --accent-purple: #9d4edd;
+  
+  --text-primary: #ffffff;
+  --text-secondary: #a0a0b8;
+  --text-muted: #6b6b80;
+  
+  --border-color: #2a2a4a;
+  --shadow-glow: 0 0 30px rgba(76, 201, 240, 0.15);
+  
+  --type-normal: #A8A878;
+  --type-feu: #F08030;
+  --type-eau: #6890F0;
+  --type-electrik: #F8D030;
+  --type-plante: #78C850;
+  --type-glace: #98D8D8;
+  --type-combat: #C03028;
+  --type-poison: #A040A0;
+  --type-sol: #E0C068;
+  --type-vol: #A890F0;
+  --type-psy: #F85888;
+  --type-insecte: #A8B820;
+  --type-roche: #B8A038;
+  --type-spectre: #705898;
+  --type-dragon: #7038F8;
+  --type-tenebres: #705848;
+  --type-acier: #B8B8D0;
+  --type-fee: #EE99AC;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  min-height: 100vh;
+  background-image: 
+    radial-gradient(ellipse at top left, rgba(157, 78, 221, 0.08) 0%, transparent 50%),
+    radial-gradient(ellipse at bottom right, rgba(76, 201, 240, 0.08) 0%, transparent 50%),
+    radial-gradient(ellipse at center, rgba(230, 57, 70, 0.04) 0%, transparent 70%);
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* Scrollbar personnalisée */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-blue);
+}
+

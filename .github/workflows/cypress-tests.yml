@@ -1,0 +1,23 @@
+name: Cypress Tests API
+on: 
+  push:
+    branches: [main]
+  workflow_dispatch:
+jobs:
+  cypress-run:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./backend
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Start API Server
+        run: npm run dev
+        
+      - name: Run Cypress tests reports
+        run: npm run test-e2e

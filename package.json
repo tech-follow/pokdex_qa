@@ -1,0 +1,22 @@
+{
+  "name": "pokdex_qa",
+  "version": "1.0.0",
+  "description": "Application Pokédex locale pour le test technique des QA Engineers chez Follow.",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aicinico/pokdex_qa.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aicinico/pokdex_qa/issues"
+  },
+  "homepage": "https://github.com/aicinico/pokdex_qa#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.57.0",
+    "@types/node": "^25.0.7"
+  }
+}
